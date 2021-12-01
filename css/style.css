@@ -45,17 +45,46 @@ header{
 
 /* main */
 main{
-    height: 600px;
+    height: 700px;
     background-color: #7FFFD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    border: 1px solid black;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.container .easy{
+    width: calc(100% / 10);
+    height: calc(100% /10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .medium{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .crazy{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* /main */
 

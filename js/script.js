@@ -25,3 +25,4 @@ play.addEventListener('click', function(){
         console.log('crazy');
     }
 })
+
