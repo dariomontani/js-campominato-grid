@@ -3,3 +3,67 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header{
+    height: 100px;
+    display: flex;
+}
+
+.left_header,
+.right_header{
+    height: 100px;
+    width: 50%;
+}
+
+.left_header{
+    display: flex;
+    align-items: center;
+}
+
+.left_header img.logo{
+    width: 10%;
+    margin: 0 1em;
+}
+
+.right_header{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.form{
+    margin-right: 1em;
+}
+
+/* /header */
+
+/* main */
+.container{
+    height: 600px;
+    background-color: #7FFFD4;
+}
+/* /main */
+
+/* footer */
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer .p_footer{
+    margin-left: 1em;
+}
+/* /footer */
+
+
+
+
+
+
