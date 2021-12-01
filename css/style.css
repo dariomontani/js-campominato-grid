@@ -57,6 +57,7 @@ main{
     height: 550px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .container .easy{
