@@ -44,10 +44,19 @@ header{
 /* /header */
 
 /* main */
-.container{
+main{
     height: 600px;
     background-color: #7FFFD4;
 }
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
 /* /main */
 
 /* footer */
