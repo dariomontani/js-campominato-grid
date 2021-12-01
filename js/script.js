@@ -31,6 +31,10 @@ play.addEventListener('click', function(){
             let random = numeriRandom(1, 100);
             quadrati.append(random);
             contenitoreQuadrati.append(quadrati);
+
+            quadrati.addEventListener('click', function () {
+                this.classList.add('blue');
+            });
         }
     } else if (scelta.value == 'medium') {
         contenitoreQuadrati.innerHTML = '';
@@ -40,6 +44,10 @@ play.addEventListener('click', function(){
             let random = numeriRandom(1, 81);
             quadrati.append(random);
             contenitoreQuadrati.append(quadrati);
+
+            quadrati.addEventListener('click', function () {
+                this.classList.add('blue');
+            });
         }
     } else if (scelta.value == 'crazy') {
         contenitoreQuadrati.innerHTML = '';
@@ -49,9 +57,15 @@ play.addEventListener('click', function(){
             let random = numeriRandom(1, 49);
             quadrati.append(random);
             contenitoreQuadrati.append(quadrati);
+
+            quadrati.addEventListener('click', function () {
+                this.classList.add('blue');
+            });
         }
     }
 });
+
+
 
 
 
