@@ -4,25 +4,59 @@
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro.
-// Consigli del giorno: : party_wizard:
+// Consigli del giorno: :
 // Facciamo prima la parte grafica a mano e solo dopo passiamo allo script
 // Scriviamo prima cosa vogliamo fare passo passo in italiano, dividiamo il lavoro in micro problemi.
 
 
+let play = document.querySelector('input');
+console.log(play);
 
 let scelta = document.getElementById('levels');
 console.log(scelta);
 
-let play = document.querySelector('input');
-console.log(play);
+let contenitoreQuadrati = document.querySelector('.container');
+console.log(contenitoreQuadrati);
+
+function numeriRandom (min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
 
 play.addEventListener('click', function(){
     if (scelta.value == 'easy') {
-        console.log('easy');
+        contenitoreQuadrati.innerHTML = '';
+        for (let i = 0; i < 100; i++) {
+            let quadrati = document.createElement('div');
+            quadrati.classList.add('easy');
+            let random = numeriRandom(1, 100);
+            quadrati.append(random);
+            contenitoreQuadrati.append(quadrati);
+        }
     } else if (scelta.value == 'medium') {
-        console.log('medium');
+        contenitoreQuadrati.innerHTML = '';
+        for (let i = 0; i < 81; i++) {
+            let quadrati = document.createElement('div');
+            quadrati.classList.add('medium');
+            let random = numeriRandom(1, 81);
+            quadrati.append(random);
+            contenitoreQuadrati.append(quadrati);
+        }
     } else if (scelta.value == 'crazy') {
-        console.log('crazy');
+        contenitoreQuadrati.innerHTML = '';
+        for (let i = 0; i < 49; i++) {
+            let quadrati = document.createElement('div');
+            quadrati.classList.add('crazy');
+            let random = numeriRandom(1, 49);
+            quadrati.append(random);
+            contenitoreQuadrati.append(quadrati);
+        }
     }
-})
+});
+
+
+
+
+
+
+
 
