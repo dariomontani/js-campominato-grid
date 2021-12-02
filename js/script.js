@@ -64,13 +64,3 @@ play.addEventListener('click', function(){
         }
     }
 });
-
-
-
-
-
-
-
-
-
-

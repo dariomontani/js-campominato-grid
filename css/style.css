@@ -41,6 +41,14 @@ header{
     margin-right: 1em;
 }
 
+select{
+    width: 10em;
+}
+
+input{
+    width: 6em;
+}
+
 /* /header */
 
 /* main */
